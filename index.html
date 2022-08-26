@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hagras</title>
+    <!-- CSs Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSs Style -->
+    <link rel="stylesheet" href="css/style.css" >
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;1,300&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header -->
+    <div id="home" class="header" id="header">
+      <div class="container">
+        <div class="logo">
+          <h1><a href="#home">Hag<span>ronica</span></a></h1>
+        </div>
+        <div class="nav">
+          <i class="fas fa-bars toogle-menu"></i>
+          <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#offer">Offers</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li id="cartx"><a href"><i class="fas fa-shopping-cart text-primary"></i>
+            <span id="myCart" class="" style="padding-bottom: 2px;">0</span></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+    <!--Start Slider-->
+    <div class="slider">
+        <div class="slides fade active">
+          <div class="text">
+            Computer And Laptop
+            <h2>Accessories</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus suscipit, recusandae debitis voluptates maiores
+              perspiciatis ab magnam eos </p>
+            <a href="contact.html" class="btn">Contact</a>
+          </div>
+           <div class="pic"><img src="imgs/slide1.jpg" alt=""> </div>
+        </div>
+        <div class="slides fade">
+          <div class="text">
+            Computer And Laptop
+            <h2>Accessories</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus suscipit, recusandae debitis voluptates maiores
+              perspiciatis ab magnam eos </p>
+            <a href="contact.html" class="btn">Contact</a>
+          </div>
+           <div class="pic"><img src="imgs/slide2.jpg" alt=""> </div>
+        </div>
+        <div class="slides fade">
+          <div class="text">
+            Computer And Laptop
+            <h2>Accessories</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus suscipit, recusandae debitis voluptates maiores
+              perspiciatis ab magnam eos </p>
+            <a href="contact.html" class="btn">Contact</a>
+          </div>
+           <div class="pic"><img src="imgs/slide3.jpg" alt=""> </div>
+        </div>
+        <div class="controls">
+          <button href="" id="btn-left" class="btn btn-left" onclick="slidePrev()"><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+          <button href="" id="btn-right" class="btn btn-right" onclick="slideNext()"><i class="fa-solid fa-angle-right fa-2x"></i></button>
+        </div>
+    </div>
+    <!--End Slider-->
+
+    <!-- Start Product -->
+    <div id="products" class="products">
+      <div class="container">
+        <h2>Our Products</h2>
+        <ul id="shuffle" class="shuffle">
+          <li ><a   class="btn active" onclick="myFilter('all')">Products</a></li>
+          <li><a class="btn" onclick="myFilter('pc')">Computer</a></li>
+          <li><a class="btn" onclick="myFilter('lap')">Laptop</a></li>
+          <li><a class="btn" onclick="myFilter('tab')">Tablet</a></li>
+          <li><a  class="btn" onclick="myFilter('phone')">Phones</a></li>
+        </ul>
+        <div class="prod-cont">
+          <div class="prod-box pc">
+            <img src="imgs/pc1.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box pc">
+            <img src="imgs/pc2.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box pc">
+            <img src="imgs/pc3.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box lap">
+            <img src="imgs/lap1.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box lap">
+            <img src="imgs/lap2.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box lap">
+            <img src="imgs/lap3.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box tab">
+            <img src="imgs/tablet.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box tab">
+            <img src="imgs/tablet2.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box tab">
+            <img src="imgs/tablet3.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box phone">
+            <img src="imgs/phone1.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box phone">
+            <img src="imgs/phone2.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          <div class="prod-box phone">
+            <img src="imgs/phone3.jpg" alt="">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+          
+          
+        </div>
+        <a href="" class="prod-btn">Show More</a>
+      </div>
+    </div>
+
+    <!-- End Product -->
+
+    <!-- Start Offer -->
+    <div id="offer" class="offer">
+      <div class="container">
+        <div class="my-offer">
+          <div class="text">
+            <p>Every Computer and laptop</p>
+            <h2>Up to 40% off !</h2>
+            <a href="" class="btn-offer">Shop Now</a>
+          </div>
+          <div class="pic">
+            <img src="imgs/pc.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Offer -->
+
+    <!-- Start Testimonials -->
+    <div id="testimonials" class="testimonials">
+      <h2>Testimonials</h2>
+      <div class="container">
+        <div class="test-box">
+          <img src="imgs/avatar-01.png" alt="">
+          <h3>Mohammed</h3>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+        </div>
+        <div class="test-box">
+          <img src="imgs/avatar-02.png" alt="">
+          <h3>Ahmed</h3>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class=" fas fa-star"></i>
+            <i class=" fas fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+        </div>
+        <div class="test-box">
+          <img src="imgs/avatar-03.png" alt="">
+          <h3>Mahmoud</h3>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class=" fas fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+        </div>
+        <div class="test-box">
+          <img src="imgs/avatar-04.png" alt="">
+          <h3>Sayed</h3>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class=" fas fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <h3>Hagronica</h3>
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="text">adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur</p>
+        </div>
+        <div class="box .about">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet minima voluptatem beatae atque officiis laborum quae modi temporibus tempore, unde, inventore, reiciendis libero perferendis? Nulla voluptatum doloremque quidem excepturi debitis!</p>
+        </div>
+        <div class="box branch">
+          <h3>Our Branches</h3>
+          <ul>
+            <li><a href="">Italy</a></li>
+            <li><a href="">France</a></li>
+            <li><a href="">USA</a></li>
+            <li><a href="">Japan</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Back To Top btn-->
+      <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+        <i class="fa fa-angle-up"></i>
+      </a>
+    </div>
+
+    <!-- End Footer -->
+
+
+    <script src="js/jq.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
