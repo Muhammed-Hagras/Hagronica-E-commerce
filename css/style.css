@@ -559,11 +559,11 @@ ul{
 }
 
 .testimonials .test-box:hover{
-    transform: translateY(-10px);
+    /*transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
+    -o-transform: translateY(-10px);*/
     animation:test-anim 0.5s ease-in;
     -webkit-animation:test-anim 0.5s ease-in;
     background-color: var(--mainColor);
