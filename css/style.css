@@ -542,6 +542,7 @@ ul{
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    
 }
 
 
@@ -563,6 +564,10 @@ ul{
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
+    animation:test-anim 0.5s ease-in;
+    -webkit-animation:test-anim 0.5s ease-in;
+    background-color: var(--mainColor);
+    color: #fff;
 }
 
 
@@ -577,6 +582,9 @@ ul{
     line-height: 1.5;
 }
 
+.testimonials .test-box:hover p{
+    color: #fff;
+}
 
 /* End testimonials */
 
@@ -772,16 +780,7 @@ ul{
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
-/*
-.contact form{
-    border: 1px solid #fff;
-    width: 80%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 
-}
-*/
 .contact input {
     display: block;
     background-color: #eee;
@@ -857,3 +856,13 @@ ul{
     -ms-transform: translateY(10px);
     -o-transform: translateY(10px);
 }}
+
+@keyframes test-anim {
+    100%{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}}
+
