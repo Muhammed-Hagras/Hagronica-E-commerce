@@ -891,6 +891,14 @@ ul{
     text-align: center;
 }
 
+
+@media (max-width: 767px){
+    .about .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
 /* End Contact US */
 
 
