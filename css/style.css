@@ -692,6 +692,17 @@ ul{
     
 }
 
+@media (max-width: 767px){
+    .footer{
+        text-align: center;
+    }
+
+    .footer .box .social li{
+        margin: auto;
+    }
+    
+}
+
 /* Back To Top Btn  */
 
 .btn-back-to-top {
