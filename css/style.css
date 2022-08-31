@@ -140,6 +140,16 @@ ul{
     font-size: 20px;
 }
 
+@media (max-width: 991px){
+    .header h1{
+        font-size: 20px;
+    }    
+
+    .header .nav ul li a{
+        font-size: 15px;
+    }
+}
+
 @media (min-width:768px) {
     .header .nav .toogle-menu{
         display: none;
@@ -441,6 +451,12 @@ ul{
     color: #fff
 }
 
+@media (max-width: 767px){
+    .shuffle li a{
+        padding: 3px;
+    }    
+}
+
 /* End Products */
 
 /* Start Offer */
@@ -486,6 +502,17 @@ ul{
 .offer .container .my-offer .btn-offer:hover{
     background-color: transparent;
     border: 1px solid #fff;
+}
+
+
+@media (max-width: 767px){
+    .offer .container .my-offer{
+        flex-direction: column;
+    } 
+
+    .offer img{
+        max-width: 100%;
+    }
 }
 
 /* End Offer */
