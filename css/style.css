@@ -515,11 +515,16 @@ ul{
 
 @media (max-width: 767px){
     .offer .container .my-offer{
-        flex-direction: column;
+        flex-direction: column-reverse;
     } 
 
     .offer img{
         max-width: 100%;
+    }
+
+    .offer 
+    {
+        text-align: center;
     }
 }
 
